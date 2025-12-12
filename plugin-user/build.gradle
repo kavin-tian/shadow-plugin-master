@@ -1,6 +1,10 @@
 buildscript {//这个模块要放在plugins {} 之前
     repositories {
-        maven { setUrl("https://localhost:9224/repository/casic_group/") }
+//        maven { setUrl("https://localhost:9224/repository/casic_group/") }
+        maven {
+            url "http://localhost:8081/repository/maven-public/"
+            allowInsecureProtocol = true  // 添加这一行
+        }
         maven { setUrl("https://mirrors.tencent.com/nexus/repository/maven-public/") }
         google()
         mavenLocal()

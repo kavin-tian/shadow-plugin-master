@@ -15,7 +15,8 @@ buildscript {
     }
 }
 plugins {
-    id 'com.android.application' version '7.0.3' apply false
+//    id 'com.android.application' version '7.0.3' apply false
+    id 'com.android.application' version '7.4.2' apply false
 }
 
 apply from: 'buildScripts/gradle/common.gradle'

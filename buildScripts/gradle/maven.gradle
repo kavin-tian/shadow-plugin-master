@@ -439,14 +439,16 @@ publishing {
 
             if ("${properties.getProperty('gpr.local')}".equalsIgnoreCase('true')) {
                 def user = "admin"
-                def key = "taohao1314"
+//                def key = "taohao1314"
+                def key = "666666"
                 maven {
                     name = "GitHubPackages"
                     credentials {
                         username = user
                         password = key
                     }
-                    url "http://localhost:9225/repository/casic_group/"
+//                    url "http://localhost:9225/repository/casic_group/"
+                    url = "http://localhost:8081/repository/maven-public/"
                 }
 
                 useLocalCredential = true
